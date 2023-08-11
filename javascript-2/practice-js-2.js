@@ -8,7 +8,7 @@
     Create a variable called 'gitDefinition'.
     It should be a string containing your best definition of what Git is.
 */
-
+const gitDefinition = "Git is an open source tool used to controll versions of code and to store and share code."
 //CODE HERE
 
 //////////////////PROBLEM 2////////////////////
@@ -18,6 +18,7 @@
 */
 
 //CODE HERE
+const gitHubDefinition = 'GitHub is a website that people can push code to to store and share'
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,7 +35,10 @@
 */
 
 //CODE HERE
-
+const init = {
+    description: "init creates a repository on my machine",
+    code: 'git init'
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +46,10 @@
 */
 
 //CODE HERE
-
+const clone = {
+    description: 'creates a copy repository whever you wanna put it'
+    code: 'git clone (url)'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +57,9 @@
 */
 
 //CODE HERE
-
+const status = {
+    description: 'tells you the status of what you added/have not added to your local repository and comitted to github',
+}   code: 'git status'
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +67,10 @@
 */
 
 //CODE HERE
-
+const add = {
+    description: 'add, adds files to your repository. Either specifically selected files or whole folders using the ( .)',
+    code: 'git add (file name or  .'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +78,10 @@
 */
 
 //CODE HERE
-
+const commit = {
+    description: 'commit gets a picture of the currnt project',
+    code: 'git commit -m "comment"'
+}
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -74,7 +89,9 @@
 */
 
 //CODE HERE
-
+const addRemote = {
+    description: ''
+}
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -82,3 +99,7 @@
 */
 
 //CODE HERE
+const push = {
+    description: 'sends your commited project or repository to github'
+    code: 'git push'
+}
