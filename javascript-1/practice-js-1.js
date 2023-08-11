@@ -260,5 +260,16 @@ const giveMeDoubles = (arr, cb) => {
 
 //CODE HERE
 const carFactory = (make, model, year) => {
-
+  car = {
+    make: '',
+    model: '',
+    year: 
+  } 
+  
+  if (car.year > 2018) {
+    return car.isNew = true;
+  } else {
+    return car.isNew = false;
+  }
+  
 }
