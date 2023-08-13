@@ -12,6 +12,10 @@ h1 {
     padding-left: 20px;
 }
 
+h2 {
+    margin-left: 10px;
+}
+
 main {
     display: block;
 }
@@ -22,12 +26,25 @@ main {
 }
 
 #bigbox2 {
+    height: 350px;
+    padding: 20px;
+}
+
+#bigbox3{
     height: 300px;
+    padding: 10px;
 }
 
 .bigbox {
     border: 5px dotted black;
-    margin: 10px
+    margin: 0px 10px 20px 10px;
+}
+
+.snowman {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto
 }
 
 .smallbox {
@@ -55,4 +72,99 @@ main {
     height: 150px;
     width: 150px;
     border: 1px solid black
+}
+
+#smwrapper {
+    width: 150px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#head {
+    height: 75px;
+    width: 75px;
+}
+
+#middle {
+    height: 110px;
+    width: 110px;
+}
+
+#bottom {
+    height: 150px;
+    width: 150px;
+}
+
+.coal {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+#lefteye{
+    float: left;
+    padding-left: 12px;
+    padding-top: 10px
+}
+
+#righteye{
+    float: right;
+    padding-right: 12px;
+    padding-top: 10px;
+}
+
+#carrot {
+    height: 25px;
+    width: 25px;
+    clear: both;
+    padding-left: 20px;
+}
+
+#button {
+    margin: 0 auto;
+    display: block;
+    padding-top: 7px;
+}
+
+#tan-square {
+    height: 250px;
+    width: 250px;
+    background-color:  beige;
+    border: 2px solid black;
+}
+
+#green-circle {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#red-square {
+    height: 130px;
+    width: 130px;
+    background-color: maroon;
+    margin: 35px 35px 35px 35px;
+}
+
+#blue-circle {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#fish-img {
+    height: 25px;
+    width: 50px;
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+#fish-tank {
+    color: white;
+    font-size: 20px;
+    padding-top: 2px;
+    text-align: center;
 }

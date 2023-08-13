@@ -3,6 +3,7 @@
 
 //CODE HERE
 let myName = "Sam"
+
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
@@ -23,6 +24,7 @@ let lovesCode = true
 const sum = (num1, num2) => {
   return (num1+num2)
 }
+
 //////////////////PROBLEM 5////////////////////
 /*
   Create a function called 'trueOrFalse' that takes in a single parameter called 'data'. 
@@ -56,6 +58,7 @@ const oddChecker = (num) => {
     return 'the number is even'
   }
 }
+
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -115,8 +118,10 @@ const me = {
   firstName: "Sam",
   state: "Texas",
   age: 38,
-  greeter: function greeting() {
-    return concat('Hello! My name is ' + me.firstName + " and I live in " + me.state)
+  // greeter: function () {
+  //   return concat('Hello! My name is ' + me.firstName + " and I live in " + me.state)
+  greeter: function () {
+    return 'Hello! My name is ' + this.firstName + ' and I live in ' + this.state 
   }
 }
 
@@ -145,6 +150,7 @@ const bigOrSmall = (arr) => {
   }
   return answers
 }
+
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -156,7 +162,14 @@ const bigOrSmall = (arr) => {
 */
 
 //CODE HERE
-
+ const arrayReverser = (arr) => {
+  let reversed = []
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i])
+  }
+  return reversed
+ }
+ 
 //////////////////PROBLEM 14////////////////////
 
 let global = 'cool string';
@@ -260,16 +273,20 @@ const giveMeDoubles = (arr, cb) => {
 
 //CODE HERE
 const carFactory = (make, model, year) => {
-  car = {
+  let car = {
     make: '',
     model: '',
-    year: 
+    year: 0
   } 
-  
+  car.make = make
+  car.model = model
+  car.year = year
   if (car.year > 2018) {
-    return car.isNew = true;
+    car.isNew = true;
   } else {
-    return car.isNew = false;
+    car.isNew = false;
   }
-  
+  return car
 }
+
+console.log(carFactory('toyota','test',2020))

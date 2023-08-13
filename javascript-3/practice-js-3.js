@@ -9,6 +9,7 @@ const groceries = ['apples', 'bread', 'chocolate']
 
 //CODE HERE
 const yourName  = "Sam"
+
 //////////////////STEP 3////////////////////
 /*
     Create a function called 'setGroceryListTitle' that takes in one parameter called 'x'. 
@@ -19,8 +20,10 @@ const yourName  = "Sam"
 
 //CODE HERE
 const setGroceryListTitle = (x) => {
-    return concat( x + ' Grocery List')
+    return x + ' Grocery List'
 }
+
+console.log(setGroceryListTitle('Sam'))
 //////////////////STEP 4////////////////////
 /* 
     Create a function called 'addItem' that takes in one parameter called 'item'. 
@@ -60,12 +63,14 @@ const removeItem = (index) => {
 
 //CODE HERE
 const checkGroceryCount = () => {
-    if (groceries.length < 5) {
-        return 'That looks like a big trip'
-    } else if (groceries.length > 1 && groceries.length < 5) {
-        return groceries.length + ' items'
-    } else if (groceries.length === 1) {
+    if (groceries.length === 1) {
         return '1 item'
+    } 
+    else if (groceries.length > 1 && groceries.length < 5) {
+        return groceries.length + ' items'
+    } 
+    else if (groceries.length <= 5) {
+        return 'That looks like a big trip'
     }
 }   
 //////////////////Check out your code!////////////////////
